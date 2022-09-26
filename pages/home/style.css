@@ -19,7 +19,7 @@ padding-top: 6.25rem;
 
 .ul-container {
     display: flex;
-    position: fixed;
+    width: 100%;
     flex-direction: column;
     justify-content: center;
     align-items: center;

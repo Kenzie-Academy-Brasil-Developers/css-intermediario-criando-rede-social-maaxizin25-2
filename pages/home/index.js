@@ -63,7 +63,6 @@ function criaPost (lista) {
     
     button.innerHTML = ('Ver post')
     button.addEventListener('click', ()=> {
-        
         sectionModal.classList.toggle('show-modal')
 
         const modalPronto = criarModal (lista, imgPerfil.src, userPost.user, userPost.stack, likesTotal)
