@@ -13,6 +13,9 @@ listPosts (posts)
 
 function criaPost (lista) {
   let likesTotal = 0
+  let userPost = users.find((element) => {
+    return element.id == lista.user
+  })
 
 
     let li = document.createElement('li') //Class: li-posts
@@ -37,12 +40,20 @@ function criaPost (lista) {
     h2Info.classList.add('title-post')
     divOpen.classList.add('open-post')
     spanOpen.classList.add('likes')
+
+    imgPerfil.src = userPost.img
+    console.log(userPost)
     
     h2Info.innerHTML = lista.title
     pInfo.innerHTML = lista.text
     likesOpen.src = "../../assets/img/like.svg"
     totalLike.innerHTML = `${likesTotal}`
     button.innerHTML = ('Ver post')
+    button.addEventListener('click', ()=> {
+        /* criarModal (lista) */
+        console.log(userPost)
+        
+    }) // Executar
     button.id = lista.id_post
     li.id = lista.id_post
 
@@ -82,5 +93,13 @@ let buttonShowPost = document.querySelectorAll('.buttow-show')
 
 console.log(ul)
 
+
+
+function criarModal (list){
+   const tituloModal = list.title
+   const textoModal = list.text
+
+
+}
 
 
