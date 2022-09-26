@@ -3,10 +3,8 @@
 }
 
 .ul-container-modal {
-
-    display: none;
     width: 100%;
-    height: 100vh;
+    height: 100%;
     position: fixed;
     display: flex;
     align-items: center;
@@ -19,6 +17,7 @@
     font-weight: 400;
     font-size: 16px;
     line-height: 28px;
+    color: var(--color-grey-2);
 }
 .title-post-modal {
 max-width: 100%;
@@ -42,7 +41,7 @@ line-height: 40px;
     padding: 2rem;
     gap: 32px;
     max-width: 713px;
-    background-color: white;
+    background-color: var(--color-white-fixed);
     border-radius: 1rem;
 }
 .open-post-modal {
