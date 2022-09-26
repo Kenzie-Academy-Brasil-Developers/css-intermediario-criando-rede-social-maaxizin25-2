@@ -19,11 +19,11 @@ padding-top: 6.25rem;
 
 .ul-container {
     display: flex;
+    position: fixed;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     margin: 0 auto;
-    width: 100%;
 }
 
 .li-suggestion {
