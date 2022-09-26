@@ -1,11 +1,19 @@
 .navbar{
     background-color: var(--color-grey-1);
     padding: 1.75rem 0;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
 }
 
 .navbar-items{
     display: flex;
     justify-content: space-between;
+    padding: 0px 6rem;
+}
+
+.navbar-items > h1 {
+    color: var(--color-white-fixed);
 }
 
 .navbar-links{
@@ -28,3 +36,4 @@
 .navbar-link:hover, .navbar-link.actived{
     background-color: var(--color-grey-2);
 }
+
